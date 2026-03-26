@@ -1,0 +1,85 @@
+/* Configuration du fond d'écran */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('eshop fond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Titre principal - Style Green Queen (Simulation avec une police cursive élégante) */
+.title-main {
+    font-family: 'Green Queen', cursive; /* Assure-toi d'avoir le fichier police */
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: black;
+}
+
+/* Slogan - Style Dynalight */
+.slogan, .footer-text {
+    font-family: 'Dynalight', cursive;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -10px;
+    color: black;
+}
+
+/* Conteneur des logos */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.grid-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Espace entre les logos */
+    max-width: 1000px;
+}
+
+.item {
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+}
+
+.item img {
+    width: 100px; /* Taille des logos */
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+}
+
+/* Boutons de paiement */
+.btn-pay {
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+/* Bas de page */
+footer {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Léger voile pour la lisibilité */
+}
